@@ -19,7 +19,9 @@ function App() {
       <Navbar
         refs={{ homeRef, aboutRef, servicesRef, workRef, contactRef }}
       />
-      <Hero refProp={homeRef} contactref={contactRef} />
+
+      {/* Pass the correct prop names */}
+      <Hero refProp={homeRef} contactRef={contactRef} />
       <About refProp={aboutRef} />
       <Services refProp={servicesRef} />
       <MyWork refProp={workRef} />

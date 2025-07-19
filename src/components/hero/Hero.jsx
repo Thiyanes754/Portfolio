@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import profile4 from "../../assets/profile4.jpg"
+import profile4 from "../../assets/profile4.jpg";
 
 const Hero = ({ refProp, contactRef }) => {
   const handleScrollToContact = () => {
@@ -9,11 +9,7 @@ const Hero = ({ refProp, contactRef }) => {
 
   return (
     <div ref={refProp} className="hero">
-      <img
-        src={profile4}
-        alt="image not found"
-        className="portfolio_animate"
-      />
+      <img src={profile4} alt="profile" className="portfolio_animate" />
 
       <h1>
         <span>I'm Thiyanes,</span> a passionate MERN Stack Developer.
@@ -21,12 +17,11 @@ const Hero = ({ refProp, contactRef }) => {
 
       <p>
         I design and develop modern, responsive websites using technologies like
-        React, Node.js, and MongoDB. Focused on writing clean code and bringing
-        ideas to life through full-stack web development.
+        React, Node.js, and MongoDB.
       </p>
 
       <div className="hero-action">
-        <div contactref={contactRef} className="hero-connect" onClick={handleScrollToContact}>
+        <div className="hero-connect" onClick={handleScrollToContact}>
           Connect With Me
         </div>
         <a
@@ -34,7 +29,7 @@ const Hero = ({ refProp, contactRef }) => {
           href="/Thiyaneswaran_resume.pdf"
           download="Thiyaneswaran_B_Resume.pdf"
         >
-          My resume
+          My Resume
         </a>
       </div>
     </div>
