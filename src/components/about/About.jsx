@@ -47,7 +47,7 @@ const About = ({ refProp }) => {
               <hr style={{ width: "65%" }} />
             </div>
             <div className="about-skill">
-              <p>Tailwind Css</p>
+              <p>Tailwind CSS</p>
               <hr style={{ width: "65%" }} />
             </div>
             <div className="about-skill">
