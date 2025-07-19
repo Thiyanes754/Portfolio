@@ -20,22 +20,22 @@ const mywork_data = [
   {
     w_no: 2,
     w_img: project2_img,
-    link: "https://youtube-clone-thiyanes754s-projects.vercel.app/"
+    link: "https://youtube-clone-wine-psi-14.vercel.app/"
   },
   {
     w_no: 3,
     w_img: project9_img,
-    link: "https://real-estate-lwttr7wfv-thiyanes754s-projects.vercel.app/"
+    link: "https://real-estate-seven-ecru.vercel.app/"
   },
   {
     w_no: 4,
     w_img: project10_img,
-    link: "https://food-11mibaymi-thiyanes754s-projects.vercel.app/"
+    link: "https://food-app-kappa-three.vercel.app/"
   },
   {
     w_no: 5,
     w_img: project7_img,
-    link: "https://gemini-clone-8q5j3mhs4-thiyanes754s-projects.vercel.app/"
+    link: "https://gemini-clone-ten-nu.vercel.app/"
   },
   {
     w_no: 6,
