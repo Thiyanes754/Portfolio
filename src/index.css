@@ -1,14 +1,25 @@
+/* Reset default margin, padding, box model */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Full size for layout */
 html, body {
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+  min-height: 100vh; /* ✅ Allows vertical scroll */
+  overflow-x: hidden; /* ✅ Prevents horizontal scroll */
   font-family: 'Outfit', sans-serif;
-  background: #161513;
+  background-color: #161513;
   color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth; /* ✅ Optional: Smooth scroll effect */
+}
+
+/* Avoid sections being hidden under fixed nav */
+main, section {
+  width: 100%;
+  overflow-x: hidden;
 }

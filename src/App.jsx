@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useRef } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
@@ -15,25 +14,19 @@ function App() {
   const workRef = useRef();
   const contactRef = useRef();
 
-  const sectionRefs = {
-    homeRef,
-    aboutRef,
-    servicesRef,
-    workRef,
-    contactRef
-  };
-
   return (
     <>
-      <Navbar refs={sectionRefs} />
+      <Navbar
+        refs={{ homeRef, aboutRef, servicesRef, workRef, contactRef }}
+      />
 
-      <div ref={homeRef}><Hero /></div>
-      <div ref={aboutRef}><About /></div>
-      <div ref={servicesRef}><Services /></div>
-      <div ref={workRef}><MyWork /></div>
-      <div ref={contactRef}><Contact /></div>
-
-      <Footer />
+      {/* Pass the correct prop names */}
+      <Hero refProp={homeRef} contactRef={contactRef} />
+      <About refProp={aboutRef} />
+      <Services refProp={servicesRef} />
+      <MyWork refProp={workRef} />
+      <Contact refProp={contactRef} />
+      <Footer contactRef={contactRef} />
     </>
   );
 }
