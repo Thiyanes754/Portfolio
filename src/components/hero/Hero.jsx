@@ -26,7 +26,7 @@ const Hero = ({ refProp, contactRef }) => {
         </div>
         <a
           className="hero-resume"
-          href="/Thiyaneswaran_resume.pdf"
+          href="/Thiyaneswaran_B_Resume.pdf"
           download="Thiyaneswaran_B_Resume.pdf"
         >
           My Resume
